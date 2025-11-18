@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Elements of Python</title>
+    <style> body { font-family: Arial, sans-serif; margin: 20px; } pre { background: #f4f4f4; padding: 10px; } </style>
+</head>
+<body>
+    <h1>2. Basic Elements of Python (with Source Codes from Sample Application)</h1>
+    <p>The sample application is a simple number guessing game. Full code:</p>
+    <pre>
+import random
+
+def guess_number():
+    number = random.randint(1, 100)
+    attempts = 0
+    while True:
+        guess = int(input("Guess a number between 1 and 100: "))
+        attempts += 1
+        if guess < number:
+            print("Too low!")
+        elif guess > number:
+            print("Too high!")
+        else:
+            print(f"Correct! It took {attempts} attempts.")
+            break
+
+guess_number()
+    </pre>
+    
+    <h2>Names and Bindings (Lecture 6)</h2>
+    <p>Names like 'number', 'attempts', and 'guess' are bound to values dynamically. Python uses late binding, where types are checked at runtime. Example: <code>number = random.randint(1, 100)</code> binds 'number' to an integer.</p>
+    
+    <h2>Expressions and Assignment (Lecture 7)</h2>
+    <p>Expressions include arithmetic like <code>attempts += 1</code> (assignment with addition). Assignment: <code>guess = int(input(...))</code> converts input to int and assigns.</p>
+    
+    <h2>Control Structures (Lecture 8)</h2>
+    <p>Uses a while loop: <code>while True:</code> for indefinite iteration, and conditional: <code>if guess < number: ... elif ... else: ...</code>.</p>
+    
+    <h2>Subprograms (Lecture 9)</h2>
+    <p>The function <code>def guess_number():</code> is a subprogram that encapsulates the game logic. It's called at the end: <code>guess_number()</code>.</p>
+    
+    <a href="index.html">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Application</title>
+    <style> body { font-family: Arial, sans-serif; margin: 20px; } </style>
+</head>
+<body>
+    <h1>3. Sample Application</h1>
+    <p>The sample is a number guessing game in Python (source code above in basic elements).</p>
+    
+    <h2>Design of System Features with Flowchart and Description</h2>
+    <p>Flowchart (text-based):</p>
+    <pre>
+Start
+  |
+Generate random number (1-100)
+  |
+Loop: Input user guess
+  |  
+Compare guess to number
+ /  \  
+Too low? -> Print "Too low!" -> Increment attempts -> Loop
+Too high? -> Print "Too high!" -> Increment attempts -> Loop
+Correct? -> Print "Correct! Attempts: X" -> End
+    </pre>
+    <p>Description: The system generates a random number, takes user inputs in a loop, compares them, provides feedback, and ends when correct.</p>
+    
+    <h2>Output of Each System Feature</h2>
+    <ul>
+        <li>Random number generation: Internal, no direct output.</li>
+        <li>User input: Prompts "Guess a number between 1 and 100: " and reads input.</li>
+        <li>Comparison: Outputs "Too low!", "Too high!", or "Correct! It took X attempts."</li>
+    </ul>
+    
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
